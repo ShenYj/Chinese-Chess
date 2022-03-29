@@ -15,11 +15,13 @@ pushd "$PROJECT_DIR"
 
 if [[ $# > 1 ]]; then
 	echo -e "只接受一个参数，你却传了： $# 个！"
+	popd
 	exit 1
 fi
 
 if [[ $# -eq 0 ]]; then
 	bundle exec pod install --no-repo-update
+	popd
 	exit 0
 fi
 
