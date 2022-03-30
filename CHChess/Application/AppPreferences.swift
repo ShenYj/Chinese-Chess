@@ -6,17 +6,11 @@
 //
 
 import Foundation
+import RxSwift
 import SwiftyUserDefaults
 
 // MARK: 对外接口
 
-/** 说明:
- 
-    对外使用 `AppPreferences.default`访问
- 
-    并非对外所有文件中使用,  目前账号、token 统一在`AuthManager`这个工具类中访问
- 
- **/
 extension AppPreferences {
     
 //    /// 读取偏好存储中的`Token`
@@ -44,15 +38,50 @@ extension AppPreferences {
 
 // MARK: 私有
 
-internal class AppPreferences {
+internal struct AppPreferences {
     
     static let `default` = AppPreferences()
     
+    let bgAudioSwitchnRelay = PublishRelay<Bool>()
+    
     // MARK: 日期相关缓存
-    fileprivate static private(set) var date = BCRDate()
+    fileprivate static private(set) var date = CCDate()
+    // MARK: 开关相关缓存
+    fileprivate static private(set) var `switch` = CCSwitch()
     
+    private init() {
+        bgAudioSwitchnRelay.accept(AppPreferences.`switch`.backgroundAudioSwitch)
+    }
+}
+
+/// 开关
+extension AppPreferences {
     
-    fileprivate struct BCRDate {
+    fileprivate struct CCSwitch {
+        
+        /// 更新背景音乐的开关状态
+        ///
+        /// - Parameter bgAudioSwitch: 开关状态, true 开启, false 关闭
+        /// - Note:
+        ///
+        fileprivate mutating func update(BackgroundAudioSwitch bgAudioSwitch: Bool) {
+            guard backgroundAudioSwitch != bgAudioSwitch else { return }
+            backgroundAudioSwitch = bgAudioSwitch
+        }
+        
+        /// 背景音乐开启状态
+        private(set) var backgroundAudioSwitch: Bool {
+            set { Defaults[\.BACKGROUND_AUDIO_SWITCH] = newValue }
+            get { Defaults[\.BACKGROUND_AUDIO_SWITCH] }
+        }
+    }
+}
+
+/// 时间
+
+extension AppPreferences {
+    
+    fileprivate struct CCDate {
         
         /// 更新`最近一次启动日期`
         ///
@@ -96,7 +125,6 @@ internal class AppPreferences {
     }
 }
 
-
 extension DefaultsKeys {
     
     /// 上一次的启动日期
@@ -107,3 +135,8 @@ extension DefaultsKeys {
     var SERVER_DATE_LATEST_OFFSET: DefaultsKey<Int>{ .init("server_date_latest_offset", defaultValue: 0) }
 }
 
+extension DefaultsKeys {
+    
+    /// 背景音乐开启状态
+    var BACKGROUND_AUDIO_SWITCH: DefaultsKey<Bool>{ .init("background_audio_switch", defaultValue: true) }
+}

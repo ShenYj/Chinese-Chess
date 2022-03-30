@@ -29,7 +29,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    static var `default`: AppDelegate? { UIApplication.shared.delegate as? AppDelegate  }
     var appDependency: AppDependency!
     var window: UIWindow?
     
@@ -44,3 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate {
+    
+    static var `default`: AppDelegate? { UIApplication.shared.delegate as? AppDelegate  }
+}

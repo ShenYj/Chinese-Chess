@@ -26,13 +26,9 @@
 
 
 import UIKit
-import WebKit
 import Foundation
 import SVProgressHUD
 import IQKeyboardManagerSwift
-#if DoKit
-import DoraemonKit
-#endif
 
 struct AppDependency {
     
@@ -103,11 +99,6 @@ extension Application {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        
-        /// 滴滴DoKit 部分场景下会影响视图层级， 如检查更新弹层的处理
-#if DoKit
-        DoraemonManager.shareInstance().install(withPid: "d6cb41d9ecf1b9d35964af8edae9aae4")
-#endif
     }
     
     /// 初始化配置

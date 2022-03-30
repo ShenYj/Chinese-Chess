@@ -11,10 +11,7 @@ import SwifterSwift
 /// 全局可用, 当前登录状态
 let loggedInRelay = BehaviorRelay<Bool>(value: false)
 
-/// 对外`Api`.
-///
-/// - SeeAlso: `BaseType`
-///
+
 extension AuthManager {
     
 //    /// 对外暴露: 更新 `token`
