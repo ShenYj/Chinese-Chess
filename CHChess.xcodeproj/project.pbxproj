@@ -60,6 +60,7 @@
 		F737411327547F3E00F95752 /* ShowHUDable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740FA27547F3E00F95752 /* ShowHUDable.swift */; };
 		F74AD14427F2DF6B004F0C4F /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14327F2DF6B004F0C4F /* LaunchViewModel.swift */; };
 		F74AD14727F2E123004F0C4F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14627F2E123004F0C4F /* LaunchViewController.swift */; };
+		F74AD14B27F4075A004F0C4F /* AVAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		F73740FA27547F3E00F95752 /* ShowHUDable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHUDable.swift; sourceTree = "<group>"; };
 		F74AD14327F2DF6B004F0C4F /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		F74AD14627F2E123004F0C4F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 				F737403A27546B3600F95752 /* AppPreferences.swift */,
 				F737403F27546B3600F95752 /* AppDelegate.swift */,
 				F737403E27546B3600F95752 /* AuthManager.swift */,
+				F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */,
 				F737403B27546B3600F95752 /* Router.swift */,
 				F737403D27546B3600F95752 /* Configurations.swift */,
 			);
@@ -463,6 +466,7 @@
 				F737405D27546B3600F95752 /* Application.swift in Sources */,
 				F737406727546B3600F95752 /* BaseType.swift in Sources */,
 				F737406027546B3600F95752 /* BaseViewController.swift in Sources */,
+				F74AD14B27F4075A004F0C4F /* AVAudioManager.swift in Sources */,
 				F73740C527547D4500F95752 /* RxAVCaptureDepthDataOutputDelegate.swift in Sources */,
 				F737410627547F3E00F95752 /* RootWindowConvertible.swift in Sources */,
 				F737406427546B3600F95752 /* CollectionItem.swift in Sources */,

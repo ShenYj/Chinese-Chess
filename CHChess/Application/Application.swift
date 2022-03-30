@@ -42,6 +42,8 @@ struct AppDependency {
     let router: Router
     /// 偏好存储
     let preferences: AppPreferences
+    /// 音频管理
+    let audioManager: AVAudioManager
     
     let configureAppearance: () -> Void
     let configureSDKs: () -> Void
@@ -65,6 +67,7 @@ final public class Application {
             window: window,
             router: Router.default,
             preferences: AppPreferences.default,
+            audioManager: AVAudioManager.default,
             configureAppearance: configureAppearance,
             configureSDKs: configureSDKs
         )
