@@ -1,0 +1,15 @@
+//
+//  BaseConfigurations.xcconfig
+//  CHChess
+//
+//  Created by EZen on 2022/4/7.
+//
+
+/// 启动图
+LAUNCH_SCREEN_STORYBOARD_NAME = LaunchScreen
+/// 应用名称
+PRODUCT_BUNDLE_NAME = 中国象棋
+
+/// 应用的版本号: 主版本、次版本、修订版本
+APP_VERSION = 1.0.0
+

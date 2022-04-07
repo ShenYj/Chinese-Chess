@@ -1,0 +1,21 @@
+//
+//  Product.release.xcconfig
+//  CHChess
+//
+//  Created by EZen on 2022/4/7.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../../Pods/Target Support Files/Pods-CHChess/Pods-CHChess.release.xcconfig"
+#include "../Shared/BaseConfigurations.xcconfig"
+
+/// Bundle ID
+PRODUCT_BUNDLE_IDENTIFIER = cn.shenyj.chinese.chess
+/// 启动图
+LAUNCH_SCREEN_STORYBOARD_NAME = ProductLaunchScreen
+/// 应用图标
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Product
+/// 应用名称
+PRODUCT_BUNDLE_NAME = $(inherited)

@@ -24,8 +24,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-extension String: StringConvertible { }
-
 extension String {
     /**
      *  MARK: - String转换为NSString

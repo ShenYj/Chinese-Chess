@@ -69,6 +69,15 @@ target 'CHChess' do
   libs_tools_pods
 end
 
+target 'CHChess-Develop' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for CHChess
+  libs_forme
+  libs_widgets_pods
+  libs_tools_pods
+end
+
 
 
 post_install do |installer|
@@ -81,19 +90,21 @@ post_install do |installer|
       configuration.build_settings['SWIFT_VERSION'] = "5.6"
       #configuration.build_settings['ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES'] = 'NO'
       configuration.build_settings['ENABLE_BITCODE'] = 'YES'
-      if ( configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 12.0 )
-        configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      if ( configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 15.0 )
+        configuration.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
       end
     end
     
-#    if target.name == 'PPILibrary'
-#      target.build_configurations.each do |config|
+    if target.name == 'PPILibrary'
+      target.build_configurations.each do |config|
+        puts "#### config.name: ####  #{config.name}"
+#        puts "#### config: ####  #{config}"
 #        if config.name == 'Debug'
 #          #config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['-D', 'DEBUG_FILE_LOG']
 #          config.build_settings['SWIFT_ACTIVE_COMPILATION_CONDITIONS'] = "$(inherited) DEBUG_FILE_LOG"
 #        end
-#      end
-#    end
+      end
+    end
     
     if target.name == 'RxSwift'
       puts "#### target.name: ####  #{target.name}"

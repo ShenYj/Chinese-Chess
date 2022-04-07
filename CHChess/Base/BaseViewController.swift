@@ -26,6 +26,10 @@
 
 import RxViewController
 import PPILibrary
+import RxSwift
+import RxCocoa
+import RxSwiftExt
+import RxOptional
 
 public class BaseViewController: UIViewController, BaseViewType {
     
@@ -45,9 +49,6 @@ public class BaseViewController: UIViewController, BaseViewType {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        #if RXSWIFT
-        log.info("当前控制器: \(#function) \(self.className) RxSwift.Resources: \(RxSwift.Resources.total)")
-        #endif
         setupUI()
         bindViewModel()
     }
@@ -105,11 +106,9 @@ extension BaseViewController {
         isLoading.asDriver()
             .drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible, rx.isLoading)
             .disposed(by: rx.disposeBag)
-        
         rx.viewWillAppear
-            .subscribe(with: self, onNext: { (owner, _) in
-                owner.navigationController?.setNavigationBarHidden(!(owner.viewModel?.showNavigationBar ?? true), animated: true)
-            })
+            .do(onNext: { log.debug("====>  viewWillAppear base [\($0)]") })
+            .bind(to: rx.showNavigationBar)
             .disposed(by: rx.disposeBag)
     }
 }

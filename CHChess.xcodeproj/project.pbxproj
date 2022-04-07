@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A4D3D0E94564353C41E3D16 /* Pods_CHChess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C02D9D55362E5BD30E88E91 /* Pods_CHChess.framework */; };
+		CB313F14CE44827627AD19BF /* Pods_CHChess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C02D9D55362E5BD30E88E91 /* Pods_CHChess.framework */; };
+		ED237BE565F4B766A9637C5A /* Pods_CHChess_Develop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CC6AF70E216A515A94FA20 /* Pods_CHChess_Develop.framework */; };
 		F737405827546B3600F95752 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403A27546B3600F95752 /* AppPreferences.swift */; };
 		F737405927546B3600F95752 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403B27546B3600F95752 /* Router.swift */; };
 		F737405A27546B3600F95752 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403D27546B3600F95752 /* Configurations.swift */; };
@@ -25,7 +27,6 @@
 		F737406927546B3600F95752 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404D27546B3600F95752 /* TableViewCellViewModel.swift */; };
 		F737406A27546B3600F95752 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404E27546B3600F95752 /* BaseView.swift */; };
 		F737406B27546B3600F95752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737405127546B3600F95752 /* Assets.xcassets */; };
-		F737406C27546B3600F95752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F737405227546B3600F95752 /* LaunchScreen.storyboard */; };
 		F737406D27546B3600F95752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F737405427546B3600F95752 /* Main.storyboard */; };
 		F73740B527547D4500F95752 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737407927547D4500F95752 /* ObservableType+ObjectMapper.swift */; };
 		F73740BC27547D4500F95752 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408127547D4500F95752 /* UIViewController+Rx.swift */; };
@@ -61,12 +62,71 @@
 		F74AD14427F2DF6B004F0C4F /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14327F2DF6B004F0C4F /* LaunchViewModel.swift */; };
 		F74AD14727F2E123004F0C4F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14627F2E123004F0C4F /* LaunchViewController.swift */; };
 		F74AD14B27F4075A004F0C4F /* AVAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */; };
+		F769245A27FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F769245927FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard */; };
+		F769245C27FF1512003FE3E5 /* ProductLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F737405227546B3600F95752 /* ProductLaunchScreen.storyboard */; };
+		F7E17E8127FF042C00FF581E /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403A27546B3600F95752 /* AppPreferences.swift */; };
+		F7E17E8227FF042C00FF581E /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14627F2E123004F0C4F /* LaunchViewController.swift */; };
+		F7E17E8327FF042C00FF581E /* MJ+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737409E27547D4500F95752 /* MJ+Ex.swift */; };
+		F7E17E8427FF042C00FF581E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404627546B3600F95752 /* TableViewCell.swift */; };
+		F7E17E8527FF042C00FF581E /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14327F2DF6B004F0C4F /* LaunchViewModel.swift */; };
+		F7E17E8627FF042C00FF581E /* UIButton+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A427547D4500F95752 /* UIButton+Ex.swift */; };
+		F7E17E8727FF042C00FF581E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408A27547D4500F95752 /* Global.swift */; };
+		F7E17E8827FF042C00FF581E /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404D27546B3600F95752 /* TableViewCellViewModel.swift */; };
+		F7E17E8927FF042C00FF581E /* DataEncryptedConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740F627547F3E00F95752 /* DataEncryptedConvertible.swift */; };
+		F7E17E8A27FF042C00FF581E /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404327546B3600F95752 /* ViewType.swift */; };
+		F7E17E8B27FF042C00FF581E /* NotificationName+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740B027547D4500F95752 /* NotificationName+Ex.swift */; };
+		F7E17E8C27FF042C00FF581E /* UILabel+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740AC27547D4500F95752 /* UILabel+Ex.swift */; };
+		F7E17E8D27FF042C00FF581E /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408527547D4500F95752 /* Single+ObjectMapper.swift */; };
+		F7E17E8E27FF042C00FF581E /* ShowHUDable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740FA27547F3E00F95752 /* ShowHUDable.swift */; };
+		F7E17E8F27FF042C00FF581E /* UINavigationController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A627547D4500F95752 /* UINavigationController+Ex.swift */; };
+		F7E17E9027FF042C00FF581E /* Location+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740AE27547D4500F95752 /* Location+Ex.swift */; };
+		F7E17E9127FF042C00FF581E /* Informationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740E927547F3E00F95752 /* Informationable.swift */; };
+		F7E17E9227FF042C00FF581E /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A127547D4500F95752 /* UIView+Ex.swift */; };
+		F7E17E9327FF042C00FF581E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403E27546B3600F95752 /* AuthManager.swift */; };
+		F7E17E9427FF042C00FF581E /* ReusedIdentifier+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A027547D4500F95752 /* ReusedIdentifier+Ex.swift */; };
+		F7E17E9527FF042C00FF581E /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404027546B3600F95752 /* Application.swift */; };
+		F7E17E9627FF042C00FF581E /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404B27546B3600F95752 /* BaseType.swift */; };
+		F7E17E9727FF042C00FF581E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404427546B3600F95752 /* BaseViewController.swift */; };
+		F7E17E9827FF042C00FF581E /* AVAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */; };
+		F7E17E9927FF042C00FF581E /* RxAVCaptureDepthDataOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408C27547D4500F95752 /* RxAVCaptureDepthDataOutputDelegate.swift */; };
+		F7E17E9A27FF042C00FF581E /* RootWindowConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740EC27547F3E00F95752 /* RootWindowConvertible.swift */; };
+		F7E17E9B27FF042C00FF581E /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404827546B3600F95752 /* CollectionItem.swift */; };
+		F7E17E9C27FF042C00FF581E /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408127547D4500F95752 /* UIViewController+Rx.swift */; };
+		F7E17E9D27FF042C00FF581E /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A527547D4500F95752 /* String+Ex.swift */; };
+		F7E17E9E27FF042C00FF581E /* RxMediaPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408427547D4500F95752 /* RxMediaPickerDelegate.swift */; };
+		F7E17E9F27FF042C00FF581E /* NSNumber+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740AD27547D4500F95752 /* NSNumber+Ex.swift */; };
+		F7E17EA027FF042C00FF581E /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403D27546B3600F95752 /* Configurations.swift */; };
+		F7E17EA127FF042C00FF581E /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408E27547D4500F95752 /* Response+ObjectMapper.swift */; };
+		F7E17EA227FF042C00FF581E /* RxAVCaptureMetadataOutputObjectsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408927547D4500F95752 /* RxAVCaptureMetadataOutputObjectsDelegate.swift */; };
+		F7E17EA327FF042C00FF581E /* DateConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740E427547F3E00F95752 /* DateConvertible.swift */; };
+		F7E17EA427FF042C00FF581E /* RxAVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408B27547D4500F95752 /* RxAVCaptureVideoDataOutputSampleBufferDelegate.swift */; };
+		F7E17EA527FF042C00FF581E /* RxMediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408327547D4500F95752 /* RxMediaPicker.swift */; };
+		F7E17EA627FF042C00FF581E /* RxAVCaptureDataOutputSynchronizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408D27547D4500F95752 /* RxAVCaptureDataOutputSynchronizerDelegate.swift */; };
+		F7E17EA727FF042C00FF581E /* CLLocationCoordinate2D+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740AF27547D4500F95752 /* CLLocationCoordinate2D+Ex.swift */; };
+		F7E17EA827FF042C00FF581E /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A727547D4500F95752 /* UIColor+Ex.swift */; };
+		F7E17EA927FF042C00FF581E /* UIWindow+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73740A927547D4500F95752 /* UIWindow+Ex.swift */; };
+		F7E17EAA27FF042C00FF581E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403B27546B3600F95752 /* Router.swift */; };
+		F7E17EAB27FF042C00FF581E /* RxAVCapturePhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408727547D4500F95752 /* RxAVCapturePhotoCaptureDelegate.swift */; };
+		F7E17EAC27FF042C00FF581E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404E27546B3600F95752 /* BaseView.swift */; };
+		F7E17EAD27FF042C00FF581E /* AVCaptureSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737408827547D4500F95752 /* AVCaptureSession+Rx.swift */; };
+		F7E17EAE27FF042C00FF581E /* CollectionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404727546B3600F95752 /* CollectionItemViewModel.swift */; };
+		F7E17EAF27FF042C00FF581E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404527546B3600F95752 /* BaseViewModel.swift */; };
+		F7E17EB027FF042C00FF581E /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737404C27546B3600F95752 /* BaseNavigationController.swift */; };
+		F7E17EB127FF042C00FF581E /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737407927547D4500F95752 /* ObservableType+ObjectMapper.swift */; };
+		F7E17EB227FF042C00FF581E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F737403F27546B3600F95752 /* AppDelegate.swift */; };
+		F7E17EB627FF042C00FF581E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F737405427546B3600F95752 /* Main.storyboard */; };
+		F7E17EB727FF042C00FF581E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737405127546B3600F95752 /* Assets.xcassets */; };
+		F7E17EBF27FF04AF00FF581E /* ProductAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E17EBE27FF04AF00FF581E /* ProductAssets.xcassets */; };
+		F7E17EC227FF04FD00FF581E /* DevelopAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E17EC027FF04CC00FF581E /* DevelopAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB640A39CEB321DA7E92C8B /* Pods-CHChess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess.debug.xcconfig"; path = "Target Support Files/Pods-CHChess/Pods-CHChess.debug.xcconfig"; sourceTree = "<group>"; };
 		2C02D9D55362E5BD30E88E91 /* Pods_CHChess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHChess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C05FBAEB62D2A63F8C00BFA4 /* Pods-CHChess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess.debug.xcconfig"; path = "Target Support Files/Pods-CHChess/Pods-CHChess.debug.xcconfig"; sourceTree = "<group>"; };
-		CE638B4E9E7B550CB076EDB4 /* Pods-CHChess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess.release.xcconfig"; path = "Target Support Files/Pods-CHChess/Pods-CHChess.release.xcconfig"; sourceTree = "<group>"; };
+		51B748FEFC73CF7A187E61AD /* Pods-CHChess-Develop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess-Develop.debug.xcconfig"; path = "Target Support Files/Pods-CHChess-Develop/Pods-CHChess-Develop.debug.xcconfig"; sourceTree = "<group>"; };
+		98CC6AF70E216A515A94FA20 /* Pods_CHChess_Develop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHChess_Develop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00DFE438174A0102ECD443C /* Pods-CHChess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess.release.xcconfig"; path = "Target Support Files/Pods-CHChess/Pods-CHChess.release.xcconfig"; sourceTree = "<group>"; };
+		D2991C7105111DFA3D3430B2 /* Pods-CHChess-Develop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHChess-Develop.release.xcconfig"; path = "Target Support Files/Pods-CHChess-Develop/Pods-CHChess-Develop.release.xcconfig"; sourceTree = "<group>"; };
 		F7160293275460CF009ACF46 /* CHChess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHChess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F737403A27546B3600F95752 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		F737403B27546B3600F95752 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -85,7 +145,7 @@
 		F737404D27546B3600F95752 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		F737404E27546B3600F95752 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		F737405127546B3600F95752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F737405327546B3600F95752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F737405327546B3600F95752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductLaunchScreen.storyboard; sourceTree = "<group>"; };
 		F737405527546B3600F95752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F737406E27546DA600F95752 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F737407927547D4500F95752 /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
@@ -122,6 +182,15 @@
 		F74AD14327F2DF6B004F0C4F /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		F74AD14627F2E123004F0C4F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioManager.swift; sourceTree = "<group>"; };
+		F769245927FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevelopLaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7E17E7727FF009D00FF581E /* BaseConfigurations.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BaseConfigurations.xcconfig; sourceTree = "<group>"; };
+		F7E17E7A27FF02A700FF581E /* Product.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Product.debug.xcconfig; sourceTree = "<group>"; };
+		F7E17E7B27FF02C100FF581E /* Product.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Product.release.xcconfig; sourceTree = "<group>"; };
+		F7E17E7C27FF02EE00FF581E /* Develop.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.debug.xcconfig; sourceTree = "<group>"; };
+		F7E17E7D27FF02FD00FF581E /* Develop.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.release.xcconfig; sourceTree = "<group>"; };
+		F7E17EBD27FF042D00FF581E /* CHChess-Develop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CHChess-Develop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E17EBE27FF04AF00FF581E /* ProductAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductAssets.xcassets; sourceTree = "<group>"; };
+		F7E17EC027FF04CC00FF581E /* DevelopAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DevelopAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +199,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4D3D0E94564353C41E3D16 /* Pods_CHChess.framework in Frameworks */,
+				CB313F14CE44827627AD19BF /* Pods_CHChess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E17EB327FF042C00FF581E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED237BE565F4B766A9637C5A /* Pods_CHChess_Develop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				2C02D9D55362E5BD30E88E91 /* Pods_CHChess.framework */,
+				98CC6AF70E216A515A94FA20 /* Pods_CHChess_Develop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,8 +226,10 @@
 		E0EA629205F8764FA1B1302E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C05FBAEB62D2A63F8C00BFA4 /* Pods-CHChess.debug.xcconfig */,
-				CE638B4E9E7B550CB076EDB4 /* Pods-CHChess.release.xcconfig */,
+				0EB640A39CEB321DA7E92C8B /* Pods-CHChess.debug.xcconfig */,
+				D00DFE438174A0102ECD443C /* Pods-CHChess.release.xcconfig */,
+				51B748FEFC73CF7A187E61AD /* Pods-CHChess-Develop.debug.xcconfig */,
+				D2991C7105111DFA3D3430B2 /* Pods-CHChess-Develop.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F7160293275460CF009ACF46 /* CHChess.app */,
+				F7E17EBD27FF042D00FF581E /* CHChess-Develop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +256,7 @@
 		F7160295275460CF009ACF46 /* CHChess */ = {
 			isa = PBXGroup;
 			children = (
+				F7E17E7527FF008900FF581E /* Configurations */,
 				F73740E227547F3E00F95752 /* Protocol */,
 				F737407227547D4500F95752 /* Extension */,
 				F737403727546B3600F95752 /* Application */,
@@ -228,7 +311,10 @@
 			children = (
 				F737406E27546DA600F95752 /* Info.plist */,
 				F737405127546B3600F95752 /* Assets.xcassets */,
-				F737405227546B3600F95752 /* LaunchScreen.storyboard */,
+				F7E17EBE27FF04AF00FF581E /* ProductAssets.xcassets */,
+				F7E17EC027FF04CC00FF581E /* DevelopAssets.xcassets */,
+				F737405227546B3600F95752 /* ProductLaunchScreen.storyboard */,
+				F769245927FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard */,
 				F737405427546B3600F95752 /* Main.storyboard */,
 			);
 			path = SupportingFiles;
@@ -328,6 +414,34 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		F7E17E7527FF008900FF581E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F7E17E7927FF00FD00FF581E /* Products */,
+				F7E17E7627FF009D00FF581E /* Shared */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F7E17E7627FF009D00FF581E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F7E17E7727FF009D00FF581E /* BaseConfigurations.xcconfig */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F7E17E7927FF00FD00FF581E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7E17E7A27FF02A700FF581E /* Product.debug.xcconfig */,
+				F7E17E7B27FF02C100FF581E /* Product.release.xcconfig */,
+				F7E17E7C27FF02EE00FF581E /* Develop.debug.xcconfig */,
+				F7E17E7D27FF02FD00FF581E /* Develop.release.xcconfig */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +462,25 @@
 			name = CHChess;
 			productName = CHChess;
 			productReference = F7160293275460CF009ACF46 /* CHChess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7E17E7E27FF042C00FF581E /* CHChess-Develop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E17EBA27FF042C00FF581E /* Build configuration list for PBXNativeTarget "CHChess-Develop" */;
+			buildPhases = (
+				79236BE2661B04B390CA97CF /* [CP] Check Pods Manifest.lock */,
+				F7E17E8027FF042C00FF581E /* Sources */,
+				F7E17EB327FF042C00FF581E /* Frameworks */,
+				F7E17EB527FF042C00FF581E /* Resources */,
+				407E3E76563ED09B114F8739 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CHChess-Develop";
+			productName = CHChess;
+			productReference = F7E17EBD27FF042D00FF581E /* CHChess-Develop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -379,6 +512,7 @@
 			projectRoot = "";
 			targets = (
 				F7160292275460CF009ACF46 /* CHChess */,
+				F7E17E7E27FF042C00FF581E /* CHChess-Develop */,
 			);
 		};
 /* End PBXProject section */
@@ -389,14 +523,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				F737406D27546B3600F95752 /* Main.storyboard in Resources */,
+				F769245C27FF1512003FE3E5 /* ProductLaunchScreen.storyboard in Resources */,
 				F737406B27546B3600F95752 /* Assets.xcassets in Resources */,
-				F737406C27546B3600F95752 /* LaunchScreen.storyboard in Resources */,
+				F7E17EBF27FF04AF00FF581E /* ProductAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E17EB527FF042C00FF581E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E17EB627FF042C00FF581E /* Main.storyboard in Resources */,
+				F769245A27FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard in Resources */,
+				F7E17EB727FF042C00FF581E /* Assets.xcassets in Resources */,
+				F7E17EC227FF04FD00FF581E /* DevelopAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		407E3E76563ED09B114F8739 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHChess-Develop/Pods-CHChess-Develop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHChess-Develop/Pods-CHChess-Develop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHChess-Develop/Pods-CHChess-Develop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79236BE2661B04B390CA97CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHChess-Develop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D97ABEE6771FECFDD4536B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,15 +681,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7E17E8027FF042C00FF581E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E17E8127FF042C00FF581E /* AppPreferences.swift in Sources */,
+				F7E17E8227FF042C00FF581E /* LaunchViewController.swift in Sources */,
+				F7E17E8327FF042C00FF581E /* MJ+Ex.swift in Sources */,
+				F7E17E8427FF042C00FF581E /* TableViewCell.swift in Sources */,
+				F7E17E8527FF042C00FF581E /* LaunchViewModel.swift in Sources */,
+				F7E17E8627FF042C00FF581E /* UIButton+Ex.swift in Sources */,
+				F7E17E8727FF042C00FF581E /* Global.swift in Sources */,
+				F7E17E8827FF042C00FF581E /* TableViewCellViewModel.swift in Sources */,
+				F7E17E8927FF042C00FF581E /* DataEncryptedConvertible.swift in Sources */,
+				F7E17E8A27FF042C00FF581E /* ViewType.swift in Sources */,
+				F7E17E8B27FF042C00FF581E /* NotificationName+Ex.swift in Sources */,
+				F7E17E8C27FF042C00FF581E /* UILabel+Ex.swift in Sources */,
+				F7E17E8D27FF042C00FF581E /* Single+ObjectMapper.swift in Sources */,
+				F7E17E8E27FF042C00FF581E /* ShowHUDable.swift in Sources */,
+				F7E17E8F27FF042C00FF581E /* UINavigationController+Ex.swift in Sources */,
+				F7E17E9027FF042C00FF581E /* Location+Ex.swift in Sources */,
+				F7E17E9127FF042C00FF581E /* Informationable.swift in Sources */,
+				F7E17E9227FF042C00FF581E /* UIView+Ex.swift in Sources */,
+				F7E17E9327FF042C00FF581E /* AuthManager.swift in Sources */,
+				F7E17E9427FF042C00FF581E /* ReusedIdentifier+Ex.swift in Sources */,
+				F7E17E9527FF042C00FF581E /* Application.swift in Sources */,
+				F7E17E9627FF042C00FF581E /* BaseType.swift in Sources */,
+				F7E17E9727FF042C00FF581E /* BaseViewController.swift in Sources */,
+				F7E17E9827FF042C00FF581E /* AVAudioManager.swift in Sources */,
+				F7E17E9927FF042C00FF581E /* RxAVCaptureDepthDataOutputDelegate.swift in Sources */,
+				F7E17E9A27FF042C00FF581E /* RootWindowConvertible.swift in Sources */,
+				F7E17E9B27FF042C00FF581E /* CollectionItem.swift in Sources */,
+				F7E17E9C27FF042C00FF581E /* UIViewController+Rx.swift in Sources */,
+				F7E17E9D27FF042C00FF581E /* String+Ex.swift in Sources */,
+				F7E17E9E27FF042C00FF581E /* RxMediaPickerDelegate.swift in Sources */,
+				F7E17E9F27FF042C00FF581E /* NSNumber+Ex.swift in Sources */,
+				F7E17EA027FF042C00FF581E /* Configurations.swift in Sources */,
+				F7E17EA127FF042C00FF581E /* Response+ObjectMapper.swift in Sources */,
+				F7E17EA227FF042C00FF581E /* RxAVCaptureMetadataOutputObjectsDelegate.swift in Sources */,
+				F7E17EA327FF042C00FF581E /* DateConvertible.swift in Sources */,
+				F7E17EA427FF042C00FF581E /* RxAVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */,
+				F7E17EA527FF042C00FF581E /* RxMediaPicker.swift in Sources */,
+				F7E17EA627FF042C00FF581E /* RxAVCaptureDataOutputSynchronizerDelegate.swift in Sources */,
+				F7E17EA727FF042C00FF581E /* CLLocationCoordinate2D+Ex.swift in Sources */,
+				F7E17EA827FF042C00FF581E /* UIColor+Ex.swift in Sources */,
+				F7E17EA927FF042C00FF581E /* UIWindow+Ex.swift in Sources */,
+				F7E17EAA27FF042C00FF581E /* Router.swift in Sources */,
+				F7E17EAB27FF042C00FF581E /* RxAVCapturePhotoCaptureDelegate.swift in Sources */,
+				F7E17EAC27FF042C00FF581E /* BaseView.swift in Sources */,
+				F7E17EAD27FF042C00FF581E /* AVCaptureSession+Rx.swift in Sources */,
+				F7E17EAE27FF042C00FF581E /* CollectionItemViewModel.swift in Sources */,
+				F7E17EAF27FF042C00FF581E /* BaseViewModel.swift in Sources */,
+				F7E17EB027FF042C00FF581E /* BaseNavigationController.swift in Sources */,
+				F7E17EB127FF042C00FF581E /* ObservableType+ObjectMapper.swift in Sources */,
+				F7E17EB227FF042C00FF581E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F737405227546B3600F95752 /* LaunchScreen.storyboard */ = {
+		F737405227546B3600F95752 /* ProductLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F737405327546B3600F95752 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = ProductLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		F737405427546B3600F95752 /* Main.storyboard */ = {
@@ -522,6 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -583,6 +826,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -636,18 +880,20 @@
 		};
 		F71602A8275460D1009ACF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C05FBAEB62D2A63F8C00BFA4 /* Pods-CHChess.debug.xcconfig */;
+			baseConfigurationReference = F7E17E7A27FF02A700FF581E /* Product.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = $PRODUCT_NAME/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "${LAUNCH_SCREEN_STORYBOARD_NAME}";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,26 +903,29 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.shenyj.chinese.chess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ChineseChessDevelopment;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F71602A9275460D1009ACF46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE638B4E9E7B550CB076EDB4 /* Pods-CHChess.release.xcconfig */;
+			baseConfigurationReference = F7E17E7B27FF02C100FF581E /* Product.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = $PRODUCT_NAME/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "${LAUNCH_SCREEN_STORYBOARD_NAME}";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -686,9 +935,74 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.shenyj.chinese.chess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ChineseChessDistribution;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7E17EBB27FF042C00FF581E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E17E7C27FF02EE00FF581E /* Develop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KS5QTFAS57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "${SRCROOT}/CHChess/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "${LAUNCH_SCREEN_STORYBOARD_NAME}";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.shenyj.chinese.chess.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ChineseChessDevelopDevelopment;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7E17EBC27FF042C00FF581E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E17E7D27FF02FD00FF581E /* Develop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KS5QTFAS57;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "${SRCROOT}/CHChess/SupportingFiles/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "${LAUNCH_SCREEN_STORYBOARD_NAME}";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.shenyj.chinese.chess.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ChineseChessDevelopDistribution;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -709,6 +1023,15 @@
 			buildConfigurations = (
 				F71602A8275460D1009ACF46 /* Debug */,
 				F71602A9275460D1009ACF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E17EBA27FF042C00FF581E /* Build configuration list for PBXNativeTarget "CHChess-Develop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E17EBB27FF042C00FF581E /* Debug */,
+				F7E17EBC27FF042C00FF581E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
