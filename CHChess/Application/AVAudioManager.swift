@@ -31,19 +31,27 @@ import RxSwift
 import RxCocoa
 import PPILibrary
 
+enum AudioSource {
+    case online
+    case local
+}
+
 class AVAudioManager: ReactiveCompatible {
     
     static let `default` = AVAudioManager()
     
     /// 音乐播放器
-    public private(set) var audioPlayer: AVAudioPlayer?
+    fileprivate var localPlayer: AVAudioPlayer?
+    fileprivate var onlinePlayer: AVPlayer?
+    
+    public private(set) var audioSource: AudioSource = .local
     /// 正在播放歌曲名称
     public private(set) var currentMusicName: String?
     
     /// 总时长
-    public var duration: TimeInterval? { audioPlayer?.duration }
+    public var duration: TimeInterval? { localPlayer?.duration }
     /// 当前时间
-    public var currentTime: TimeInterval? { audioPlayer?.currentTime }
+    public var currentTime: TimeInterval? { localPlayer?.currentTime }
 
     private init() {
         
@@ -75,17 +83,24 @@ extension AVAudioManager {
     
     /// 设置播放进度
     public func set(CurrentTime time: TimeInterval) {
-        audioPlayer?.currentTime = time
+        switch audioSource {
+        case .online:   onlinePlayer?.seek(to: CMTime(seconds: time, preferredTimescale: .min))
+        case .local:    localPlayer?.currentTime = time
+        }
     }
     
     /// 暂停
     public func pauseMusic() {
-        audioPlayer?.pause()
+        switch audioSource {
+        case .online:   onlinePlayer?.pause()
+        case .local:    localPlayer?.pause()
+        }
     }
     
     /// 通过音乐名称, 播放本地音频
     public func play(MusicWithFileName musicName: String) {
         
+        audioSource = .local
         if currentMusicName != musicName {
             
             guard let filePath = Bundle.main.path(forResource: musicName, ofType: nil) else {
@@ -93,8 +108,8 @@ extension AVAudioManager {
             }
             
             do {
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: filePath))
-                audioPlayer?.prepareToPlay()
+                localPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: filePath))
+                localPlayer?.prepareToPlay()
                 currentMusicName = musicName
             } catch {
                 log.error("播放器初始化失败: \(error)")
@@ -102,8 +117,21 @@ extension AVAudioManager {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.audioPlayer?.play()
+            self.localPlayer?.play()
         }
+    }
+    
+    /// 通过音乐名称, 播放本地音频
+    public func play(onlineMusicLink musicLink: String, musicName: String) {
+        
+        audioSource = .online
+        guard let url = URL(string: musicLink) else {
+            fatalError("TODO: to be fixed!")
+        }
+        let playItem = AVPlayerItem(url: url)
+        onlinePlayer = AVPlayer(playerItem: playItem)
+        currentMusicName = musicName
+        onlinePlayer?.play()
     }
 }
 
@@ -156,7 +184,11 @@ extension Reactive where Base: AVAudioManager {
                 guard let interruptionOptionType = useInfo[AVAudioSessionInterruptionOptionKey] as? AVAudioSession.InterruptionOptions else { return }
                 switch interruptionOptionType {
                 case .shouldResume:
-                    owner.audioPlayer?.play()
+                    
+                    switch owner.audioSource {
+                    case .online:   owner.onlinePlayer?.play()
+                    case .local:    owner.localPlayer?.play()
+                    }
                     log.verbose("中断结束 --> 继续播放")
                 default:
                     log.verbose("另一个音频会话的中断已结束，但应用程序此时不满足恢复其音频会话")

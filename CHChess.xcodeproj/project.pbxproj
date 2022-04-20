@@ -183,6 +183,7 @@
 		F74AD14627F2E123004F0C4F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		F74AD14A27F4075A004F0C4F /* AVAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioManager.swift; sourceTree = "<group>"; };
 		F769245927FF14F3003FE3E5 /* DevelopLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DevelopLaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7AED2392806F7DB002C9149 /* CHChessDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CHChessDebug.entitlements; sourceTree = "<group>"; };
 		F7E17E7727FF009D00FF581E /* BaseConfigurations.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BaseConfigurations.xcconfig; sourceTree = "<group>"; };
 		F7E17E7A27FF02A700FF581E /* Product.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Product.debug.xcconfig; sourceTree = "<group>"; };
 		F7E17E7B27FF02C100FF581E /* Product.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Product.release.xcconfig; sourceTree = "<group>"; };
@@ -256,6 +257,7 @@
 		F7160295275460CF009ACF46 /* CHChess */ = {
 			isa = PBXGroup;
 			children = (
+				F7AED2392806F7DB002C9149 /* CHChessDebug.entitlements */,
 				F7E17E7527FF008900FF581E /* Configurations */,
 				F73740E227547F3E00F95752 /* Protocol */,
 				F737407227547D4500F95752 /* Extension */,
@@ -884,6 +886,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = CHChess/CHChessDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

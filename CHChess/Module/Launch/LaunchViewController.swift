@@ -37,6 +37,12 @@ extension LaunchViewController {
             viewAppearActivedOB: viewAppearActivedOB
         )
         let output = viewModel.transform(input: input)
-        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        AppDelegate.default?
+            .appDependency
+            .audioManager
+            .play(onlineMusicLink: "https://www.1314zhilv.com/group1/M00/20/43/cxw862HVPX-AdCteAFpX8X3R7jg326.mp3", musicName: "故宫博物院")
     }
 }
